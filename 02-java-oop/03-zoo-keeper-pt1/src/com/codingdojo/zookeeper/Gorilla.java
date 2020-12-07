@@ -1,8 +1,6 @@
 package com.codingdojo.zookeeper;
 
 public class Gorilla extends Mammal {
-	//private int energyLevel = 100;
-	
 	public void throwSomething(){
 		System.out.println("The Gorilla Threw Something");
 		energyLevel = energyLevel - 5;
