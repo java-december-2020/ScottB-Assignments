@@ -1,10 +1,10 @@
 package com.codingdojo.objectmasterone;
 
 public class Human {
-	int strength = 3;
-	int stealth = 3;
-	int intelligence = 3;
-	int health = 100;
+	private int strength = 3;
+	private int stealth = 3;
+	private int intelligence = 3;
+	private int health = 100;
 
 	public int getStrength() {
 		return strength;
@@ -39,8 +39,8 @@ public class Human {
 	}
 	
 	public void attack(Human attackedHuman) {
-		System.out.println("Health before attack = " + attackedHuman.health);
+		System.out.println("Health before attack: " + attackedHuman.health);
 		attackedHuman.health -= this.getStrength();
-		System.out.println("Health after attack = " + attackedHuman.health);
+		System.out.println("Health after attack: " + attackedHuman.health);
 	}
 }
